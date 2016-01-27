@@ -6,7 +6,7 @@ import string
 class Cvc(object):
 
     vowels     = ['a', 'e', 'i', 'o', 'u']
-    consonants = [letter for letter in string.ascii_lowercase if letter not in vowels]
+    consonants = [letter for letter in string.ascii_lowercase if letter not in Cvc.vowels]
     separator  = '-'
 
     def __init__(self):
