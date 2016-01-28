@@ -12,8 +12,6 @@ class Cvc(object):
     def __init__(self):
         self.crypto     = random.SystemRandom()
         self.consonants = [letter for letter in string.ascii_lowercase if letter not in Cvc.vowels]
-        for i in range(0,3):
-            print(self.generate_password())
 
     def generate_password(self):
         '''Generate a string with random characters in the format cvc-cvc-cvc
